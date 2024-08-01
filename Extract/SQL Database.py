@@ -26,3 +26,7 @@ for row in cursor:
 # in order to use insert query in execute function, we'll need to commit it.
 cursor.execute("insert into table_name values (a, bc, c)")
 cursor.commit()
+
+#lastly make sure to close cursor object & connection object
+cursor.close()
+cnxn.close()
